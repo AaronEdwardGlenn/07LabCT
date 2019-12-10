@@ -29,7 +29,9 @@ describe('app routes', () => {
           'mix ingredients',
           'put dough on cookie sheet',
           'bake for 10 minutes'
-        ]
+        ],
+        ingredients: [],
+
       })
       .then(res => {
         expect(res.body).toEqual({
@@ -41,6 +43,7 @@ describe('app routes', () => {
             'put dough on cookie sheet',
             'bake for 10 minutes'
           ],
+          ingredients: expect.any(Array),
           __v: 0
         });
       });
@@ -88,6 +91,7 @@ describe('app routes', () => {
           'put dough on cookie sheet',
           'bake for 10 minutes'
         ],
+        ingredients: expect.any(Array),
         __v: recipe.__v
       });
     });
@@ -102,6 +106,7 @@ describe('app routes', () => {
         'put dough on cookie sheet',
         'bake for 10 minutes'
       ],
+
     });
 
     return request(app)
@@ -117,6 +122,7 @@ describe('app routes', () => {
             'put dough on cookie sheet',
             'bake for 10 minutes'
           ],
+          ingredients: expect.any(Array),
           __v: 0
         });
       });
@@ -130,7 +136,9 @@ describe('app routes', () => {
           'mix ingredients',
           'put dough on cookie sheet',
           'bake for 10 minutes'
-        ]
+        ],
+        ingredients: [],
+
     });
 
     return request(app)
@@ -145,6 +153,7 @@ describe('app routes', () => {
             'put dough on cookie sheet',
             'bake for 10 minutes'
           ],
+          ingredients: expect.any(Array),
           __v: 0
       })
     });
