@@ -20,14 +20,6 @@
     "eqeqeq": ["error", "always"],
       "no-useless-escape": 0,
     "no-console": "warn",
-    "indent": [
-      "error",
-      4,
-      {
-        "SwitchCase": 1,
-        "ignoreComments": true
-      }
-    ],
     "quotes": [
       "error", 
       "single",
