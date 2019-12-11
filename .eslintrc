@@ -9,13 +9,15 @@
   },
   "env": {
     "browser": true,
-    "es6": true
+    "es6": true,
+    "node": true,
   },
   "globals": {
     "QUnit": false
   },
   "rules": {
     "eqeqeq": ["error", "always"],
+      "no-useless-escape": 0,
     "no-console": "warn",
     "indent": [
       "error",
